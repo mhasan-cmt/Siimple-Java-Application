@@ -321,6 +321,11 @@ public class SalesData extends javax.swing.JFrame {
             public void popupMenuWillBecomeVisible(javax.swing.event.PopupMenuEvent evt) {
             }
         });
+        comProduct.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comProductActionPerformed(evt);
+            }
+        });
         getContentPane().add(comProduct, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, 270, 50));
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -772,6 +777,10 @@ String showD="SELECT * FROM `salestable` WHERE `Bill no.`=1 AND `cus_Name`=\"Sol
         new Dashboard().setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jLabel8MouseClicked
+
+    private void comProductActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comProductActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comProductActionPerformed
 
     /**
      * @param args the command line arguments
